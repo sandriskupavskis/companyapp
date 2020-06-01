@@ -46,7 +46,6 @@ public class Creds {
     }
 
     public Creds getCreds() throws IOException {
-// Instantiating a new ObjectMapper as a YAMLFactory
         ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
         return mapper.readValue(new File("src/main/resources/creds.yml"), Creds.class);
     }
