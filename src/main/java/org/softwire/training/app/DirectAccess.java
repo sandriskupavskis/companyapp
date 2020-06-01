@@ -1,11 +1,7 @@
 package org.softwire.training.app;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import org.softwire.training.properties.Creds;
 
-import java.io.File;
-import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,9 +30,4 @@ public class DirectAccess {
         }
     }
 
-//    public Creds getCreds() throws IOException {
-//// Instantiating a new ObjectMapper as a YAMLFactory
-//        ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
-//        return mapper.readValue(new File("src/main/resources/creds.yml"), Creds.class);
-//    }
 }

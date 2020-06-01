@@ -47,14 +47,14 @@ public class Main {
         System.out.println(new OrmAccess().getEmployeeWithSql(6).toArrayString());
         System.out.println();
     }
-//
+
     private static void getEmployeeWithoutSql() {
         System.out.println("ORM access without SQL");
         Employee employee = new OrmAccess().getEmployeeWithoutSql(2);
         System.out.println(employee.toArrayString());
         System.out.println();
     }
-//
+
     private static void updateEmployeeWithSql() {
         System.out.println("ORM update with SQL");
         OrmAccess ormAccess = new OrmAccess();
@@ -65,7 +65,7 @@ public class Main {
         System.out.println(employee.toArrayString());
         System.out.println();
     }
-//
+
     private static void updateEmployeeWithoutSql() {
         System.out.println("ORM update without SQL");
         OrmAccess ormAccess = new OrmAccess();
